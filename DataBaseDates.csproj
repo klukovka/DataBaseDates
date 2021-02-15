@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3BEBA5A-FAC4-4E52-9FFE-DB5BFA024D4D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DataBaseDates</RootNamespace>
+    <AssemblyName>DataBaseDates</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\ConnectionString.cs" />
+    <Compile Include="Controller\Query.cs" />
+    <Compile Include="Model\Alcohol.cs" />
+    <Compile Include="Model\Couple.cs" />
+    <Compile Include="Model\Education.cs" />
+    <Compile Include="Model\Eyes.cs" />
+    <Compile Include="Model\Hair.cs" />
+    <Compile Include="Model\Human.cs" />
+    <Compile Include="Model\Invitation.cs" />
+    <Compile Include="Model\Method.cs" />
+    <Compile Include="Model\Partner.cs" />
+    <Compile Include="Model\Political.cs" />
+    <Compile Include="Model\Religioun.cs" />
+    <Compile Include="Model\Sex.cs" />
+    <Compile Include="Model\Smoking.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\AboutMe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AboutMe.Designer.cs">
+      <DependentUpon>AboutMe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AboutPartner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AboutPartner.Designer.cs">
+      <DependentUpon>AboutPartner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminArchive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdminArchive.Designer.cs">
+      <DependentUpon>AdminArchive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminBaseProfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdminBaseProfiles.Designer.cs">
+      <DependentUpon>AdminBaseProfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminCouple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdminCouple.Designer.cs">
+      <DependentUpon>AdminCouple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminIdealPartner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdminIdealPartner.Designer.cs">
+      <DependentUpon>AdminIdealPartner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminInvitations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdminInvitations.Designer.cs">
+      <DependentUpon>AdminInvitations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdminProfile.Designer.cs">
+      <DependentUpon>AdminProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Archive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Archive.Designer.cs">
+      <DependentUpon>Archive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\BaseProfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BaseProfiles.Designer.cs">
+      <DependentUpon>BaseProfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChangeAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChangeAccount.Designer.cs">
+      <DependentUpon>ChangeAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChangeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChangeInfo.Designer.cs">
+      <DependentUpon>ChangeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CheckPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CheckPassword.Designer.cs">
+      <DependentUpon>CheckPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChooseYourPartner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChooseYourPartner.Designer.cs">
+      <DependentUpon>ChooseYourPartner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CreateInvitation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CreateInvitation.Designer.cs">
+      <DependentUpon>CreateInvitation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Exit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Exit.Designer.cs">
+      <DependentUpon>Exit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GoToArchive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GoToArchive.Designer.cs">
+      <DependentUpon>GoToArchive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\IdealPartner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\IdealPartner.Designer.cs">
+      <DependentUpon>IdealPartner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MyInvitations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MyInvitations.Designer.cs">
+      <DependentUpon>MyInvitations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PartnerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PartnerInfo.Designer.cs">
+      <DependentUpon>PartnerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RegForm.Designer.cs">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RegInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RegInfo.Designer.cs">
+      <DependentUpon>RegInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RemoveProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RemoveProfile.Designer.cs">
+      <DependentUpon>RemoveProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Statistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Statistic.Designer.cs">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\AboutMe.resx">
+      <DependentUpon>AboutMe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AboutPartner.resx">
+      <DependentUpon>AboutPartner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminArchive.resx">
+      <DependentUpon>AdminArchive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminBaseProfiles.resx">
+      <DependentUpon>AdminBaseProfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminCouple.resx">
+      <DependentUpon>AdminCouple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminIdealPartner.resx">
+      <DependentUpon>AdminIdealPartner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminInvitations.resx">
+      <DependentUpon>AdminInvitations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminProfile.resx">
+      <DependentUpon>AdminProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Archive.resx">
+      <DependentUpon>Archive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BaseProfiles.resx">
+      <DependentUpon>BaseProfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ChangeAccount.resx">
+      <DependentUpon>ChangeAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ChangeInfo.resx">
+      <DependentUpon>ChangeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CheckPassword.resx">
+      <DependentUpon>CheckPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ChooseYourPartner.resx">
+      <DependentUpon>ChooseYourPartner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CreateInvitation.resx">
+      <DependentUpon>CreateInvitation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Exit.resx">
+      <DependentUpon>Exit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GoToArchive.resx">
+      <DependentUpon>GoToArchive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\IdealPartner.resx">
+      <DependentUpon>IdealPartner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MyInvitations.resx">
+      <DependentUpon>MyInvitations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PartnerInfo.resx">
+      <DependentUpon>PartnerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RegForm.resx">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RegInfo.resx">
+      <DependentUpon>RegInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RemoveProfile.resx">
+      <DependentUpon>RemoveProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Statistic.resx">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\Photos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
